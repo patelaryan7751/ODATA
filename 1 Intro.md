@@ -44,7 +44,29 @@ https://services.odata.org/v2/northwind/northwind.svc/$metadata
 </EntityType>
 ```
 EntityContainer
-- EntitySet  
+- EntitySet 
+ 
+```
+<EntitySet Name="Categories" EntityType="NorthwindModel.Category"/>
+```
+
 - AssociationSet
 
+```
+<AssociationSet Name="FK_Products_Categories" Association="NorthwindModel.FK_Products_Categories">
+<End Role="Categories" EntitySet="Categories"/>
+<End Role="Products" EntitySet="Products"/>
+</AssociationSet>
+```
+
 ![image](https://github.com/patelaryan7751/ODATA/assets/59426397/a3054e81-962e-4953-b5b0-2ed85e78b1bf)
+
+So as we know each **EntityType** has ``key``,``property`` and ``navigationproperty``
+
+- key: defines the primary key of the particular entity
+- property: defines each single field with their data types
+- navigationproperty: relationship between 2 entity sets such as product and category are related as foriegn key
+```
+<NavigationProperty Name="Products" Relationship="NorthwindModel.FK_Products_Categories" FromRole="Categories" ToRole="Products"/>
+```
+
