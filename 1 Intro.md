@@ -8,3 +8,6 @@ It's a collection of restful API which allows ``webSQL``
 2 parts of Odata are essential 
 - Format: Defines how data is described, how it is serialized
 - Protocol: Defines how that data is manipulated
+
+![image](https://github.com/patelaryan7751/ODATA/assets/59426397/7a6d2770-b4c3-4f14-aa5b-c23c01cdc001)
+
