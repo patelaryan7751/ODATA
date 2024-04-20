@@ -43,3 +43,8 @@ https://services.odata.org/v2/northwind/northwind.svc/$metadata
 <NavigationProperty Name="Products" Relationship="NorthwindModel.FK_Products_Categories" FromRole="Categories" ToRole="Products"/>
 </EntityType>
 ```
+EntityContainer
+   /       \
+EntitySet  AssociationSet
+
+![image](https://github.com/patelaryan7751/ODATA/assets/59426397/a3054e81-962e-4953-b5b0-2ed85e78b1bf)
